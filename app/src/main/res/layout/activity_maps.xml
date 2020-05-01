@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:padding="5dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:minLines="1"
+            android:hint="@string/enter_the_name_of_place"
+            android:background="@color/white"
+            android:layout_marginEnd="@dimen/margin_30"
+            android:imeOptions="actionDone"
+            android:textColor="@android:color/black"
+            android:dropDownVerticalOffset="5dp"
+            android:dropDownWidth="wrap_content"
+            android:inputType="textAutoComplete|textAutoCorrect"
+            android:popupBackground="@color/white"
+            android:id="@+id/actv_choose_places"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_clear_black_24dp"/>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_clear"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_10"
+        android:text="@string/clear"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/frame"
+        android:visibility="gone"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_below="@+id/frame"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MapsActivity" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_get_direction"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/colorAccent"
+        android:text="@string/get_direction"/>
+</RelativeLayout>

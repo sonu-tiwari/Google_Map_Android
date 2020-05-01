@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Maps API</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="background_task">Background Task</string>
+    <string name="exception_downloading_url">Exception download url</string>
+    <string name="please_select_2_positions">Please select 2 positions</string>
+    <string name="you_already_entered_2_places">You already entered 2 places</string>
+    <string name="position">Position</string>
+    <string name="clear">Clear</string>
+    <string name="enter_the_name_of_place">Enter the name of place</string>
+    <string name="fetching">Fetching details for ID:</string>
+    <string name="selected">Selected:</string>
+    <string name="places_query_error">Place query did not complete. Error:</string>
+    <string name="error_processing">Error processing Places API URL</string>
+    <string name="error_connecting">Error connecting to Places API</string>
+    <string name="status_error">Error occurred</string>
+    <string name="can_not_process_json">Cannot process JSON results</string>
+</resources>
